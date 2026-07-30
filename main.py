@@ -15,6 +15,7 @@ if __name__ == "__main__":
 
     chunks = gerar_embeddings(chunks)
 
+    print(chunks[0]["id"])
     print(chunks[0]["arquivo"])
     print(chunks[0]["texto"][:100])
 
