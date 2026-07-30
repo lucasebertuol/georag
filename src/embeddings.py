@@ -21,6 +21,6 @@ def gerar_embeddings(chunks):
     )
 
     for chunk, embedding in zip(chunks, embeddings):
-        chunk["embedding"] = embedding
+        chunk["embedding"] = embedding.tolist()
 
     return chunks

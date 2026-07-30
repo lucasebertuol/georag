@@ -5,6 +5,9 @@
 __pycache__/
 *.py[cod]
 
+# Banco vetorial (ChromaDB)
+chroma_db/
+
 # Arquivos do sistema
 .DS_Store
 
