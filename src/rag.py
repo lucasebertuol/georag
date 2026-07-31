@@ -68,4 +68,13 @@ Resposta:
         ]
     )
 
-    return resposta.choices[0].message.content
+    arquivos = []
+
+    for metadata in resultado["metadados"]:
+        if metadata["arquivo"] not in arquivos:
+            arquivos.append(metadata["arquivo"])
+
+    return {
+        "resposta": resposta.choices[0].message.content,
+        "arquivos": arquivos
+    }
