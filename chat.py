@@ -15,4 +15,6 @@ while True:
     resposta = responder(pergunta, CAMINHO_DB)
 
     print("\nResposta:")
-    print(resposta)
+    print(resposta["resposta"])
+    print("\nArquivos:")
+    print(resposta["arquivos"])
