@@ -5,6 +5,7 @@ from src.chunk import dividir_em_chunks
 from src.embeddings import gerar_embeddings
 from src.vector_store import salvar_no_chroma
 from src.retriever import buscar
+from src.rag import responder
 
 BASE_DIR = Path(__file__).resolve().parent
 PASTA_DADOS = BASE_DIR / "dataset"
@@ -37,3 +38,10 @@ if __name__ == "__main__":
     #     print("-" * 60)
     #     print(documento)
     #     print()
+
+    resposta = responder(
+        "O que foi retirado a 22 metros?",
+        CAMINHO_DB
+    )
+
+    print(resposta)
