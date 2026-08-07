@@ -16,4 +16,8 @@ An assistant that answers questions about geological documents with varying form
 - ChromaDB
 - Setence Transformers
 
+## Quick Start 
+- First, run ingest.py to index the documents into the vector database. 
+- Then, run chat.py to interact with the GeoRAG assistant.
+
 
